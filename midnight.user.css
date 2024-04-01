@@ -1,11 +1,16 @@
-/**
- * @name midnight
- * @description A darkened discord theme.
- * @author refact0r
- * @version 1.6.2
- * @source https://github.com/refact0r/midnight-discord
- * @authorId 508863359777505290
-*/
+/* ==UserStyle==
+@name           midnight
+@namespace      https://github.com/refact0r
+@version        1.6.2
+@description    A dark, rounded discord theme.
+@author         refact0r
+@homepageURL    https://github.com/refact0r/midnight-discord
+@supportURL     https://discord.gg/nz87hXyvcy
+@license		MIT
+@var select flavor "flavor" ["midnight", "biscuit", "nord", "catppuccin", "lilypichu"]
+@var text font "font" figtree
+@var text corner-text "corner text" midnight
+==/UserStyle== */
 
 /* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
 
