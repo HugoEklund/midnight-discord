@@ -48,9 +48,7 @@
 	/* ALL ANIMATIONS CAN BE DISABLED WITH REDUCED MOTION IN DISCORD SETTINGS */
 	--list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
 	--unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
-	--moon-spin-transition: 0.4s ease; /* moon icon spin */
-	--icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
-
+	
 	/* corner roundness (border-radius) */
 	--roundness-xl: 22px; /* roundness of big panel outer corners */
 	--roundness-l: 20px; /* popout panels */
@@ -83,8 +81,6 @@
 :root.reduce-motion {
 	--list-item-transition: none;
 	--unread-bar-transition: none;
-	--moon-spin-transition: none;
-	--icon-spin-transition: none;
 }
 
 /* modify colors */
@@ -687,15 +683,6 @@ button.button__581d0 /* small buttons */,
 	-webkit-mask-size: var(--moon-icon-size);
 	-webkit-mask-repeat: none;
 }
-.wrapper__8436d:hover .childWrapper_a6ce15::before {
-	transition: background-color 0.15s ease-out, transform var(--moon-spin-transition);
-	transform: rotate(0deg) scale(1);
-}
-.wrapper__8436d:hover > .childWrapper_a6ce15::before,
-.wrapper__8436d.selected_ae80f7 > .childWrapper_a6ce15::before {
-	background: var(--text-0);
-	transform: rotate(-360deg) scale(0.8);
-}
 .lowerBadge_e89e22::before {
 	content: '';
 	display: block;
@@ -759,25 +746,6 @@ button.button__581d0 /* small buttons */,
 .container_a48b21:hover,
 .channel__0aef5:hover {
 	margin-left: 18px;
-}
-
-/* spin hover animations */
-button.button_ae40a4 /* make user panel buttons round */ {
-	border-radius: 50%;
-}
-.button_ae40a4:last-child .contents__322f4 /* settings button */, 
-.attachButton__56f98 .attachButtonInner__84c26 /* upload button */,
-.emojiButton_b63c38 .contents__322f4 /* emoji button */,
-.closeButton__8177f /* settings exit button */,
-.contents__322f4 > .closeIcon__16020 /* modal close */ {
-	transition: transform var(--icon-spin-transition);
-}
-.button_ae40a4:last-child:hover .contents__322f4,
-.attachButton__56f98:hover .attachButtonInner__84c26,
-.emojiButton_b63c38:hover .contents__322f4,
-.closeButton__8177f:hover,
-.contents__322f4:hover > .closeIcon__16020 {
-	transform: rotate(360deg);
 }
 
 /* hide unread bar on hover */
